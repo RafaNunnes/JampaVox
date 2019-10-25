@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Estação Hack</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            background-color: black;
+            margin: 0;
+            display: grid;
+            height: 100%;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 10% 400px 450px 10% 500px 10%;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        header,
+        nav,
+        section,
+        aside,
+        footer {
+            display: flex;
+            flex-direction: row;
+
+            color: white;
+            font-family: 'Arial Narrow Bold', sans-serif, Impact, Haettenschweiler;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            /* border: solid 1px mediumaquamarine; */
+            border-bottom: solid 10px rgba(255, 255, 255, 0.389);
+            background: rgba(119, 186, 189, 0.74);
+        }
+
+        .lista div,
+        .mapa {
+            height: 100%;
+            width: calc(100% - 3px);
+            border: solid 1px rgba(255, 255, 255, 0.389);
+        }
+
+        .lista div {
+            height: 250px;
+            display: flex;
+            align-items: center;
+            background-color:rgba(119, 186, 189, 0.54);
+
+        }
+
+        .cabecalho,
+        .logo {
+            justify-content: space-around;
+        }
+
+        .lista {
+            display: block;
+            flex-direction: column;
+            grid-row-end: span 2;
+            overflow: auto;
+        }
+
+        .mapa {
+            grid-row-end: span 2;
+        }
+
+        .rodape,
+        .conteudo_titulo {
+            grid-column-end: span 2;
+        }
+
+        .descricao div p {
+            font-size: 20px;
+            padding: 10px;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .descricao div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div>
+            <img class="foto" src="icon.png" alt="JampaVox" height="40px">
+        </div>
+    </header>
+    <nav class="home">
+        <a href="">Home</a>
+        <a href="">Problemas</a>
+        <a href="">Soluções</a>
+        <a href="">Denuncie</a>
+    </nav>
+    <section class="logo">
+        <div>
+            <img class="foto" src="JampaVox.png" alt="JampaVox" height="300">
+        </div>
+    </section>
+    <section class="slogan">
+        <div>
+            Aqui você tem voz!
+        </div>
+    </section>
+    <section class="descricao">
+        <div>
+            <h2>Quem somos?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, fugiat quos! Magnam adipisci cum optio rerum recusandae quaerat molestiae fugiat iusto nesciunt saepe! Illo at consequatur, eaque natus tenetur perspiciatis?</p>
+        </div>
+    </section>
+    <section class="descricao">
+        <div>
+            <h2>O que fazemos?</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores reiciendis dolorem atque illum sit voluptas ab delectus amet enim, vitae corrupti, nam necessitatibus laborum ut facere? Neque, a! Ad, possimus?</p>
+        </div>
+    </section>
+    <section class="conteudo_titulo">
+        <div>
+            <p>Principais Problemas</p>
+        </div>
+    </section>
+    <aside class="lista">
+        <div class="item">
+            <div class="imagem">
+                <img src="http://files.cod3r.com.br/curso-web/imagem3.png" 
+                alt="Rio de Janeiro" height="150">
+            </div>
+            <div>
+                <p>Local 1</p>     
+            </div>
+        </div>
+        <div class="item">
+            <img src="http://files.cod3r.com.br/curso-web/imagem3.png" 
+            alt="Rio de Janeiro" height="150"> 
+            <p>Local 2</p>
+        </div>
+        <div class="item">
+            <img src="http://files.cod3r.com.br/curso-web/imagem3.png" 
+            alt="Rio de Janeiro" height="150"> 
+            <p>Local 3</p>
+        </div>
+        <div class="item">
+            <img src="http://files.cod3r.com.br/curso-web/imagem3.png" 
+            alt="Rio de Janeiro" height="150"> 
+            <p>Local 4</p>
+        </div>
+        <div class="item">
+            <img src="http://files.cod3r.com.br/curso-web/imagem3.png" 
+            alt="Rio de Janeiro" height="150"> 
+            <p>Local 5</p>
+        </div>
+    </aside>
+    <section class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126682.29494159063!2d-34.95163809184208!3d-7.146603565420642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace839019aa3d7%3A0x6e414a9c6d26db34!2sJo%C3%A3o%20Pessoa%2C%20PB!5e0!3m2!1spt-BR!2sbr!4v1572029968984!5m2!1spt-BR!2sbr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </section>
+    <footer class="rodape">rodapé</footer>
+
+</body>
+
+</html>
